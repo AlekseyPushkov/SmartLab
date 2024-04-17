@@ -181,7 +181,7 @@ class ConfirmationEmailActivity : AppCompatActivity() {
         finish()
     }
 
-    private suspend fun startCountDownTimer(timeMillis: Long){
+    private fun startCountDownTimer(timeMillis: Long){
         val repeatedCode = findViewById<TextView>(R.id.repeatedCode)
         timer?.cancel()
         timer = object : CountDownTimer(timeMillis, 1000){
